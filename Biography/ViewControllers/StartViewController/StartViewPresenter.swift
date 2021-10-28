@@ -23,6 +23,7 @@ final class StartViewPresenter: StartViewPresenterProtocol {
     
 }
 
+// MARK: - Private Extension
 extension StartViewPresenter {
     func pushToDetailVC(view: UIViewController, result: Model) {
                 navigator.pushStartDetailVC(from: view, result: result)

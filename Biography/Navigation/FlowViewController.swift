@@ -9,13 +9,13 @@ import UIKit
 
 class FlowViewController: UIViewController {
 
-    
+    // MARK: - Properties
     private var embedTabBarVc: UITabBarController = UITabBarController()
-    
-    
     private lazy var startViewController: UINavigationController = instantiateStartVC()
+    private lazy var secondViewController: UIViewController = instantiateSecondVC()
     private let navigator: Navigator
     
+    // MARK: - Init
     init(navigator: Navigator) {
         self.navigator = navigator
         super.init(nibName: nil, bundle: nil)
@@ -25,26 +25,26 @@ class FlowViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
     }
     
+    //MARK: - Over Method
     //этот метод под вопросом
     func setSelectedIndex(index: Int) {
         embedTabBarVc.selectedIndex = index
     }
 }
 
-
-
-
+// MARK: - Private Extension
 extension FlowViewController {
     
     private func initialSetup() {
         view.backgroundColor = .white
         embedTabBarVc.delegate = self
-        embedTabBarVc.viewControllers = [startViewController]
+        embedTabBarVc.viewControllers = [startViewController, secondViewController]
         embedTabBarVc.tabBar.isTranslucent = false
         embedTabBarVc.tabBar.tintColor = .black
         embedTabBarVc.tabBar.unselectedItemTintColor = .black
@@ -62,19 +62,15 @@ extension FlowViewController {
         return navigationVC
     }
     
-    private func instantiateDetailVC() -> UINavigationController {
-        let presenter = StartViewPresenter(navigator: navigator)
-        let vc = StartViewController(presenter: presenter)
-        let navigationVC = UINavigationController(rootViewController: vc)
-        vc.tabBarItem = UITabBarItem(title: "Мои проекты",
-                                     image: UIImage(systemName: "person"),
-                                     selectedImage: UIImage(systemName: "person.fill")
+    private func instantiateSecondVC() -> UIViewController {
+        let presenter = SecondViewPresenter()
+        let vc = SecondViewController(presenter: presenter)
+        vc.tabBarItem = UITabBarItem(title: "Обо мне",
+                                     image: UIImage(systemName: "aqi.low"),
+                                     selectedImage: UIImage(systemName: "aqi.medium")
         )
-        return navigationVC
+        return vc
     }
-    
-    
-    
 }
 
 extension FlowViewController: UITabBarControllerDelegate {

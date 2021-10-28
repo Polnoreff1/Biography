@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 class Assembler {
     
     func detailStartViewController(result: Model) -> UIViewController {

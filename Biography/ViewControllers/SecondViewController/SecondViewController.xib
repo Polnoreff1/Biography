@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="Biography" customModuleProvider="target">
+            <connections>
+                <outlet property="halfTopView" destination="KaX-RJ-Fd4" id="xo4-hB-xfQ"/>
+                <outlet property="subscribeButton" destination="NuW-MT-oMN" id="iUr-x3-b7F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-10-28_13-31-55" translatesAutoresizingMaskIntoConstraints="NO" id="A7D-hN-JOS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaX-RJ-Fd4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На этом всё!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-RS-08k">
+                            <rect key="frame" x="106.5" y="17" width="162.5" height="32.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99049204589999995" green="0.873660624" blue="0.60629367830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="hGx-wQ-BwM"/>
+                        <constraint firstItem="oXH-RS-08k" firstAttribute="top" secondItem="KaX-RJ-Fd4" secondAttribute="top" constant="17" id="zq1-vk-6yG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подписывайтесь на меня в Instagram!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlA-3p-dUr">
+                    <rect key="frame" x="36" y="311" width="302" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-MT-oMN" customClass="NKButton" customModule="NKButton">
+                    <rect key="frame" x="120" y="471" width="135" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="openInst:" destination="-1" eventType="touchUpInside" id="GHG-sr-RgY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A7D-hN-JOS" secondAttribute="trailing" id="01x-5d-Bmu"/>
+                <constraint firstItem="KaX-RJ-Fd4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1rQ-4D-aMO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NuW-MT-oMN" secondAttribute="trailing" constant="120" id="AYA-1u-yka"/>
+                <constraint firstItem="A7D-hN-JOS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BBZ-A6-c8x"/>
+                <constraint firstItem="NuW-MT-oMN" firstAttribute="top" secondItem="jlA-3p-dUr" secondAttribute="bottom" constant="100" id="GSH-A9-fsG"/>
+                <constraint firstItem="KaX-RJ-Fd4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dJS-1a-Hi3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A7D-hN-JOS" secondAttribute="bottom" id="go1-Vd-Tdn"/>
+                <constraint firstItem="A7D-hN-JOS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jgd-mN-XoK"/>
+                <constraint firstItem="oXH-RS-08k" firstAttribute="centerX" secondItem="A7D-hN-JOS" secondAttribute="centerX" id="lPa-a9-S44"/>
+                <constraint firstItem="KaX-RJ-Fd4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mPt-pF-awm"/>
+                <constraint firstItem="jlA-3p-dUr" firstAttribute="top" secondItem="KaX-RJ-Fd4" secondAttribute="bottom" constant="171" id="rFs-7Y-n5m"/>
+                <constraint firstItem="jlA-3p-dUr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="skU-5x-eYZ"/>
+                <constraint firstItem="NuW-MT-oMN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="uht-ls-BGN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jlA-3p-dUr" secondAttribute="trailing" constant="37" id="wsa-xb-ydO"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="128.18590704647679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo_2021-10-28_13-31-55" width="736" height="610"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
