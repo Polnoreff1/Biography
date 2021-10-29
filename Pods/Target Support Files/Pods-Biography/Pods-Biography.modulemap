@@ -1,0 +1,6 @@
+framework module Pods_Biography {
+  umbrella header "Pods-Biography-umbrella.h"
+
+  export *
+  module * { export * }
+}

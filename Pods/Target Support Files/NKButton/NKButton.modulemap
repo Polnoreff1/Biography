@@ -1,0 +1,6 @@
+framework module NKButton {
+  umbrella header "NKButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

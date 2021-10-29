@@ -1,0 +1,6 @@
+framework module FrameLayoutKit {
+  umbrella header "FrameLayoutKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
