@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigator = Navigator()
-        let viewController = FlowViewController(navigator: navigator)
+        let networking = NetworkService()
+        let viewController = FlowViewController(navigator: navigator, networkService: networking)
         window?.rootViewController = viewController
         //это под вопросом, строка ниже
         viewController.setSelectedIndex(index: 0)

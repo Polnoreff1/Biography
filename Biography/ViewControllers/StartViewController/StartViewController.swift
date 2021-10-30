@@ -42,7 +42,7 @@ extension StartViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "MyWorkTableViewCell", bundle: nil), forCellReuseIdentifier: "workCell")
+        tableView.register(MyWorkTableViewCell.nib, forCellReuseIdentifier: MyWorkTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.layer.borderWidth = 0.5
         tableView.layer.borderColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
@@ -74,7 +74,7 @@ extension StartViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "workCell") as! MyWorkTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyWorkTableViewCell.identifier) as! MyWorkTableViewCell
         let model = models[indexPath.row]
         cell.imageView?.image = UIImage(named: model.preview)
         cell.textLabel?.text = model.nameOfProject

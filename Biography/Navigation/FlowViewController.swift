@@ -10,14 +10,19 @@ import UIKit
 class FlowViewController: UIViewController {
 
     // MARK: - Properties
+    private let navigator: Navigator
+    private let networkService: NetworkService
     private var embedTabBarVc: UITabBarController = UITabBarController()
     private lazy var startViewController: UINavigationController = instantiateStartVC()
     private lazy var secondViewController: UIViewController = instantiateSecondVC()
-    private let navigator: Navigator
+    private lazy var newsViewController: UINavigationController = instantiateNewsVC()
+    
+    
     
     // MARK: - Init
-    init(navigator: Navigator) {
+    init(navigator: Navigator, networkService: NetworkService) {
         self.navigator = navigator
+        self.networkService = networkService
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -44,7 +49,7 @@ extension FlowViewController {
     private func initialSetup() {
         view.backgroundColor = .white
         embedTabBarVc.delegate = self
-        embedTabBarVc.viewControllers = [startViewController, secondViewController]
+        embedTabBarVc.viewControllers = [startViewController, secondViewController, newsViewController]
         embedTabBarVc.tabBar.isTranslucent = false
         embedTabBarVc.tabBar.tintColor = .black
         embedTabBarVc.tabBar.unselectedItemTintColor = .black
@@ -71,6 +76,19 @@ extension FlowViewController {
         )
         return vc
     }
+    
+    private func instantiateNewsVC() -> UINavigationController {
+        let presenter = NewsViewPresenter(navigator: navigator, networkService: networkService)
+        let vc = Biography.NewsViewController(presenter: presenter)
+        let navigationVC = UINavigationController(rootViewController: vc)
+        vc.tabBarItem = UITabBarItem(title: "Новости",
+                                     image: UIImage(systemName: "magnifyingglass.circle"),
+                                     selectedImage: UIImage(systemName: "magnifyingglass.circle.fill")
+        )
+        return navigationVC
+    }
+    
+    
 }
 
 extension FlowViewController: UITabBarControllerDelegate {

@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7713B6072729926300AA2180 /* DetailCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713B6052729926300AA2180 /* DetailCVCell.swift */; };
 		7713B6082729926300AA2180 /* DetailCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7713B6062729926300AA2180 /* DetailCVCell.xib */; };
+		776276C6272D7A1E00C14B9C /* CellIdentifable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276C5272D7A1E00C14B9C /* CellIdentifable.swift */; };
+		776276C9272D7BAC00C14B9C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276C7272D7BAC00C14B9C /* NewsViewController.swift */; };
+		776276CA272D7BAC00C14B9C /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776276C8272D7BAC00C14B9C /* NewsViewController.xib */; };
+		776276D2272D7D6700C14B9C /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276D0272D7D6700C14B9C /* NewsTableViewCell.swift */; };
+		776276D3272D7D6700C14B9C /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776276D1272D7D6700C14B9C /* NewsTableViewCell.xib */; };
+		776276D5272D87F000C14B9C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276D4272D87F000C14B9C /* News.swift */; };
+		776276D7272D8BB200C14B9C /* NewsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276D6272D8BB200C14B9C /* NewsViewPresenter.swift */; };
+		776276D9272D92D900C14B9C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276D8272D92D900C14B9C /* NetworkService.swift */; };
+		776276DB272D93B100C14B9C /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276DA272D93B100C14B9C /* Closure.swift */; };
+		776276DD272D949C00C14B9C /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276DC272D949C00C14B9C /* ApiEndPoint.swift */; };
+		776276E1272DA23200C14B9C /* SeconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276DF272DA23200C14B9C /* SeconDetailViewController.swift */; };
+		776276E2272DA23200C14B9C /* SeconDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776276E0272DA23200C14B9C /* SeconDetailViewController.xib */; };
+		776276E4272DA24300C14B9C /* SeconDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776276E3272DA24300C14B9C /* SeconDetailViewPresenter.swift */; };
 		7767563A272ACACC00195214 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77675638272ACACC00195214 /* SecondViewController.swift */; };
 		7767563B272ACACC00195214 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77675639272ACACC00195214 /* SecondViewController.xib */; };
 		7767563D272ACAE900195214 /* SecondViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767563C272ACAE900195214 /* SecondViewPresenter.swift */; };
 		7773AB6727241E750044562D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773AB6627241E750044562D /* AppDelegate.swift */; };
 		7773AB6927241E750044562D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773AB6827241E750044562D /* SceneDelegate.swift */; };
-		7773AB6B27241E750044562D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773AB6A27241E750044562D /* ViewController.swift */; };
 		7773AB7027241E790044562D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7773AB6F27241E790044562D /* Assets.xcassets */; };
 		7773AB7327241E790044562D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7773AB7127241E790044562D /* LaunchScreen.storyboard */; };
 		7773AB7C272425500044562D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773AB7A272425500044562D /* StartViewController.swift */; };
@@ -38,13 +50,25 @@
 		58CF6EBD0198F52E14BB7373 /* Pods-Biography.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biography.debug.xcconfig"; path = "Target Support Files/Pods-Biography/Pods-Biography.debug.xcconfig"; sourceTree = "<group>"; };
 		7713B6052729926300AA2180 /* DetailCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCVCell.swift; sourceTree = "<group>"; };
 		7713B6062729926300AA2180 /* DetailCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCVCell.xib; sourceTree = "<group>"; };
+		776276C5272D7A1E00C14B9C /* CellIdentifable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellIdentifable.swift; path = "../../../../Downloads/Biography-main/Biography/Extension/CellIdentifable.swift"; sourceTree = "<group>"; };
+		776276C7272D7BAC00C14B9C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		776276C8272D7BAC00C14B9C /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		776276D0272D7D6700C14B9C /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		776276D1272D7D6700C14B9C /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		776276D4272D87F000C14B9C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		776276D6272D8BB200C14B9C /* NewsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewPresenter.swift; sourceTree = "<group>"; };
+		776276D8272D92D900C14B9C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		776276DA272D93B100C14B9C /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
+		776276DC272D949C00C14B9C /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		776276DF272DA23200C14B9C /* SeconDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconDetailViewController.swift; sourceTree = "<group>"; };
+		776276E0272DA23200C14B9C /* SeconDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeconDetailViewController.xib; sourceTree = "<group>"; };
+		776276E3272DA24300C14B9C /* SeconDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconDetailViewPresenter.swift; sourceTree = "<group>"; };
 		77675638272ACACC00195214 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		77675639272ACACC00195214 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		7767563C272ACAE900195214 /* SecondViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewPresenter.swift; sourceTree = "<group>"; };
 		7773AB6327241E750044562D /* Biography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7773AB6627241E750044562D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7773AB6827241E750044562D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7773AB6A27241E750044562D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7773AB6F27241E790044562D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7773AB7227241E790044562D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7773AB7427241E790044562D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +106,6 @@
 				58CF6EBD0198F52E14BB7373 /* Pods-Biography.debug.xcconfig */,
 				A86C140806FF19B7FFBAF6E5 /* Pods-Biography.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,21 +126,62 @@
 			path = DetailCell;
 			sourceTree = "<group>";
 		};
-		7713B60A272998DA00AA2180 /* Model */ = {
+		7713B60A272998DA00AA2180 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				77DD63C127249808002E53D4 /* Model.swift */,
+				776276D4272D87F000C14B9C /* News.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		776276CB272D7BCD00C14B9C /* NewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				776276CF272D7D2A00C14B9C /* NewsCell */,
+				776276C8272D7BAC00C14B9C /* NewsViewController.xib */,
+				776276C7272D7BAC00C14B9C /* NewsViewController.swift */,
+				776276D6272D8BB200C14B9C /* NewsViewPresenter.swift */,
+			);
+			path = NewsViewController;
+			sourceTree = "<group>";
+		};
+		776276CE272D7CCA00C14B9C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				776276D8272D92D900C14B9C /* NetworkService.swift */,
+				776276DC272D949C00C14B9C /* ApiEndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		776276CF272D7D2A00C14B9C /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				776276D0272D7D6700C14B9C /* NewsTableViewCell.swift */,
+				776276D1272D7D6700C14B9C /* NewsTableViewCell.xib */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		776276DE272DA21000C14B9C /* SecondDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				776276DF272DA23200C14B9C /* SeconDetailViewController.swift */,
+				776276E0272DA23200C14B9C /* SeconDetailViewController.xib */,
+				776276E3272DA24300C14B9C /* SeconDetailViewPresenter.swift */,
+			);
+			path = SecondDetailVC;
 			sourceTree = "<group>";
 		};
 		77675636272ACA2E00195214 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7773AB6A27241E750044562D /* ViewController.swift */,
+				776276DE272DA21000C14B9C /* SecondDetailVC */,
 				77675637272ACA6B00195214 /* SecondViewController */,
 				7773AB8B27243E290044562D /* DetailViewController */,
 				7773AB7E272425770044562D /* StartViewController */,
+				776276CB272D7BCD00C14B9C /* NewsViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -153,8 +217,9 @@
 		7773AB6527241E750044562D /* Biography */ = {
 			isa = PBXGroup;
 			children = (
+				776276CE272D7CCA00C14B9C /* Networking */,
 				77675636272ACA2E00195214 /* ViewControllers */,
-				7713B60A272998DA00AA2180 /* Model */,
+				7713B60A272998DA00AA2180 /* Models */,
 				77DD63BC272490F3002E53D4 /* Navigation */,
 				7773AB6827241E750044562D /* SceneDelegate.swift */,
 				7773AB6627241E750044562D /* AppDelegate.swift */,
@@ -181,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				7773AB85272435A30044562D /* UIViewController.swift */,
+				776276C5272D7A1E00C14B9C /* CellIdentifable.swift */,
+				776276DA272D93B100C14B9C /* Closure.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -274,9 +341,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776276E2272DA23200C14B9C /* SeconDetailViewController.xib in Resources */,
 				7773AB7327241E790044562D /* LaunchScreen.storyboard in Resources */,
 				7767563B272ACACC00195214 /* SecondViewController.xib in Resources */,
 				7773AB7027241E790044562D /* Assets.xcassets in Resources */,
+				776276CA272D7BAC00C14B9C /* NewsViewController.xib in Resources */,
+				776276D3272D7D6700C14B9C /* NewsTableViewCell.xib in Resources */,
 				7773AB7D272425500044562D /* StartViewController.xib in Resources */,
 				7713B6082729926300AA2180 /* DetailCVCell.xib in Resources */,
 				7773AB8A27243DFD0044562D /* DetailViewController.xib in Resources */,
@@ -334,20 +404,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7773AB86272435A30044562D /* UIViewController.swift in Sources */,
-				7773AB6B27241E750044562D /* ViewController.swift in Sources */,
+				776276D2272D7D6700C14B9C /* NewsTableViewCell.swift in Sources */,
 				7773AB7C272425500044562D /* StartViewController.swift in Sources */,
 				7767563D272ACAE900195214 /* SecondViewPresenter.swift in Sources */,
+				776276E1272DA23200C14B9C /* SeconDetailViewController.swift in Sources */,
 				7767563A272ACACC00195214 /* SecondViewController.swift in Sources */,
 				7773AB81272428E50044562D /* FlowViewController.swift in Sources */,
 				77DD63C027249348002E53D4 /* Assembler.swift in Sources */,
+				776276C6272D7A1E00C14B9C /* CellIdentifable.swift in Sources */,
 				7713B6072729926300AA2180 /* DetailCVCell.swift in Sources */,
 				77DD63BA27248989002E53D4 /* MyWorkTableViewCell.swift in Sources */,
+				776276D7272D8BB200C14B9C /* NewsViewPresenter.swift in Sources */,
 				77DD63C227249808002E53D4 /* Model.swift in Sources */,
 				77DD63BE27249124002E53D4 /* Navigator.swift in Sources */,
+				776276D9272D92D900C14B9C /* NetworkService.swift in Sources */,
 				7773AB8D27243EF00044562D /* DetailViewPresenter.swift in Sources */,
 				7773AB6727241E750044562D /* AppDelegate.swift in Sources */,
 				7773AB8327242A5C0044562D /* StartViewPresenter.swift in Sources */,
+				776276DB272D93B100C14B9C /* Closure.swift in Sources */,
+				776276DD272D949C00C14B9C /* ApiEndPoint.swift in Sources */,
+				776276C9272D7BAC00C14B9C /* NewsViewController.swift in Sources */,
+				776276D5272D87F000C14B9C /* News.swift in Sources */,
 				7773AB6927241E750044562D /* SceneDelegate.swift in Sources */,
+				776276E4272DA24300C14B9C /* SeconDetailViewPresenter.swift in Sources */,
 				7773AB8927243DFD0044562D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,7 @@ target 'Biography' do
   use_frameworks!
 
 pod 'NKButton'
+pod 'Alamofire', '~> 5.4'
 
   # Pods for Biography
 

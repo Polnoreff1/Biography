@@ -21,5 +21,10 @@ class Navigator: NavigatorProtocol {
         viewController.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func pushSecondDetailVC(from viewController: UIViewController, result: Result) {
+        let vc = appAssembly.secondDetailVC(result: result)
+        viewController.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

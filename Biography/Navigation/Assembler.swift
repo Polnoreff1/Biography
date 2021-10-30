@@ -15,4 +15,11 @@ class Assembler {
         let viewController = DetailViewController(presenter: presenter)
         return viewController
     }
+    
+    func secondDetailVC(result: Result) -> UIViewController {
+        let presenter = SeconDetailViewPresenter(model: result)
+        let vc = SeconDetailViewController(presenter: presenter)
+        return vc
+    }
+    
 }

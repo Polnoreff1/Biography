@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyWorkTableViewCell: UITableViewCell {
+class MyWorkTableViewCell: UITableViewCell, CellIdentifiable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
